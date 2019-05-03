@@ -92,6 +92,7 @@ nav {
   width: 13rem;
   height: 2.5rem;
   border-bottom: 1px solid #ddd;
+  border-width: 70%;
 }
 .btn__edit-hide {
   border-bottom: none;
@@ -212,6 +213,7 @@ nav {
 input {
   font-family: inherit;
   font-size: 0.95rem;
+  padding: 0.5rem;
   border: none;
   border-bottom: 1px solid #ddd;
   width: 40%;
@@ -244,6 +246,7 @@ a {
   font-family: Nunito, sans-serif;
   font-size: 0.95rem;
   color: #808080;
+  padding: 0.5rem;
   padding-right: 1.5em;
   width: 100%;
   margin: 0;
@@ -293,6 +296,9 @@ a {
 }
 #edit__settings:checked ~ .edit__settings-list {
   display: block;
+  padding: 5px;
+  border-radius: 0.7rem;
+  overflow: hidden;
 }
 
 .edit__button {
