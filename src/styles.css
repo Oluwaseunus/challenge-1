@@ -30,6 +30,7 @@ body {
 }
 
 nav {
+  font-family: 'Nunito', sans-serif;
   font-size: 0.8rem;
   font-weight: 700;
   border-bottom: 1px solid rgba(0, 0, 0, 0.2);
@@ -53,7 +54,7 @@ nav {
 .nav-link {
   text-decoration: none;
   line-height: 1.5;
-  font-weight: 300;
+  font-weight: 700;
   margin-right: 1rem;
   color: #606060;
 }
@@ -116,6 +117,7 @@ nav {
 .main__header-base {
   border-bottom: 3px solid #ff227c;
   padding-bottom: 0.5rem;
+  font-weight: 700;
 }
 
 .profile {
