@@ -115,7 +115,7 @@ nav {
   border-bottom: 3px solid #ff227c;
   padding-bottom: 0.5rem;
 }
-.main__header::after {
+/* .main__header::after {
   content: '';
   display: block;
   position: absolute;
@@ -123,7 +123,7 @@ nav {
   bottom: -0.05rem;
   left: 0;
   border-bottom: 1px solid white;
-}
+} */
 
 .profile {
   display: flex;
@@ -170,11 +170,14 @@ nav {
 .edit__bottom {
   bottom: 0.1rem;
   right: -0.5rem;
+  display: none;
   transition: all 0.2s ease;
 }
 .edit__settings-list {
   position: absolute;
-  top: 1rem;
+  display: none;
+  top: 6rem;
+  left: 9rem;
   box-shadow: 7px 7px 1.5rem 0 rgba(0, 0, 0, 0.2);
 }
 .edit__settings-list > * {
@@ -288,16 +291,31 @@ a {
   color: rgba(0, 0, 0, 0.4);
 }
 
-input[type='checkbox'] {
-  position: absolute;
-  top: -9999px;
-  left: -9999px;
-  opacity: 0;
-  cursor: pointer;
+#edit__settings {
+  display: none;
 }
-input[type='checkbox']:checked ~ div {
+#edit__settings:checked ~ .edit__settings-list {
   display: block;
 }
+
+.edit__button {
+  background-color: #fff;
+  height: 2.5rem;
+  width: 2.5rem;
+  position: absolute;
+  top: 4rem;
+  left: 7.5rem;
+  border-radius: 50%;
+  z-index: 2000;
+  box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.1);
+  text-align: center;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+}
+/* .edit__button-image {
+  transform: translate(25%, 60%);
+} */
 
 .align {
   opacity: 0;
