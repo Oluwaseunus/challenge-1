@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Nunito:400,700');
+@import url('https://fonts.googleapis.com/css?family=Raleway:400,700');
 
 *,
 *::before,
@@ -9,7 +9,7 @@
 }
 
 body {
-  font-family: Nunito, sans-serif;
+  font-family: Raleway, sans-serif;
   color: #606060;
   background-color: #f0f4f7;
 }
@@ -27,10 +27,12 @@ body {
 }
 .container-nav .logo {
   margin-right: auto;
+  width: 10rem;
+  height: 6rem;
 }
 
 nav {
-  font-family: 'Nunito', sans-serif;
+  font-family: 'Raleway', sans-serif;
   font-size: 0.8rem;
   font-weight: 700;
   border-bottom: 1px solid rgba(0, 0, 0, 0.2);
@@ -43,7 +45,117 @@ nav {
   align-items: center;
 }
 .links > * {
-  margin-right: 4rem;
+  margin-right: 1rem;
+  width: 70%;
+}
+
+@media screen and (max-width: 64em) {
+  .links {
+    justify-content: space-around;
+  }
+}
+@media screen and (max-width: 56.25em) {
+  .links {
+    font-size: 1rem;
+  }
+  ul.nav__list-2 {
+    display: none;
+  }
+  .links > * {
+    margin-right: 1rem;
+  }
+  .btn {
+    padding: 0.6rem 1.5rem;
+  }
+}
+@media screen and (max-width: 37.5em) {
+  .container {
+    padding: 0;
+  }
+  .container-nav .logo {
+    width: 25%;
+  }
+  .content {
+    overflow: hidden;
+  }
+  .links {
+    font-size: 0.8rem;
+  }
+  .links .btn {
+    padding: 0.5rem 1.5rem;
+    border: 1px solid red;
+  }
+  .container .main__header {
+    height: 3rem;
+    width: 90%;
+  }
+  .content .form {
+    width: 100%;
+  }
+  .content .form :nth-child(5) {
+    height: 2.5rem;
+  }
+  .content .profile {
+    margin-bottom: 4rem;
+  }
+  .profile .profile__bg {
+    width: 28rem;
+    height: 14rem;
+  }
+  .row {
+    width: 80%;
+    margin: auto;
+  }
+}
+@media screen and (max-width: 29.25em) {
+  .links ul.nav__list-1 {
+    display: none;
+  }
+  .links .btn {
+    width: 8rem;
+  }
+  .profile__bg .edit {
+    width: 2rem;
+    height: 2rem;
+    padding: 8px;
+  }
+  .edit .edit__top {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .profile .profile__bg {
+    width: 22rem;
+    height: 11rem;
+  }
+  .profile__bg .profile__avatar {
+    width: 7rem;
+    height: 7rem;
+  }
+  .profile__avatar .edit__button {
+    height: 2rem;
+    width: 2rem;
+    top: 4rem;
+    left: 4rem;
+  }
+  form .row {
+    margin-bottom: 0;
+  }
+  form .row.row-3,
+  form .row.row-4 {
+    height: 50.19px;
+  }
+  form .row .row-3 .select {
+    transform: translateY(-1.5px);
+  }
+  .row input,
+  .row .select select {
+    font-size: 0.7rem;
+    padding: 0.1rem;
+  }
+  .row .select select {
+    height: 100%;
+  }
 }
 
 .nav__list {
@@ -60,6 +172,53 @@ nav {
 }
 .nav-link-current {
   color: #fab018;
+}
+@media screen and (max-width: 25em) {
+  .container-nav {
+    height: 4rem;
+  }
+  .profile .profile__bg {
+    width: 18rem;
+    height: 9rem;
+  }
+  .profile__bg .profile__avatar {
+    width: 6rem;
+    height: 6rem;
+  }
+  .profile__avatar .edit__button {
+    top: 3.5rem;
+    left: 4rem;
+  }
+  form .row {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  form .row > * {
+    width: 85%;
+  }
+  form .row.row-3,
+  form .row.row-4 {
+    height: 100.38px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+  }
+  form .row.row-3 {
+    padding-bottom: 5px;
+  }
+  form .row.row-4 {
+    padding: 5px 0;
+  }
+  content .form :nth-child(5) {
+    height: 38px;
+  }
+  .btn.btn__submit {
+    margin: 45px 0 50px;
+    transform: translateY(-40px);
+  }
 }
 
 .btn {
@@ -118,6 +277,7 @@ nav {
   border-bottom: 3px solid #ff227c;
   padding-bottom: 0.5rem;
   font-weight: 700;
+  font-size: 0.8rem;
 }
 
 .profile {
@@ -206,6 +366,10 @@ nav {
 .row > * {
   width: 47%;
 }
+.row-4,
+form :nth-child(5) {
+  height: 4rem;
+}
 .row__submit {
   width: 70%;
   justify-content: center;
@@ -245,7 +409,8 @@ a {
   border-bottom: 1px solid #ddd;
 }
 .select select {
-  font-family: Nunito, sans-serif;
+  background-color: transparent;
+  font-family: Raleway, sans-serif;
   font-size: 0.95rem;
   color: #808080;
   padding: 0.5rem;
